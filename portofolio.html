@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <style>
+        * {
+            margin: 100;
+            padding: 100;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        /* Header Navigation */
+        nav {
+            margin-bottom: 20px;
+            margin-left: 70px;
+        }
+
+        nav a {
+            margin-right: 10px;
+            color: #333;
+            text-decoration: underline;
+        }
+
+        nav a:hover {
+            color: #0a54a4;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Profile Section */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #1c2227;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-left: 80px;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 15px 0 5px 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Skills & Projects List */
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Portfolio Gallery - Horizontal */
+        .portfolio-gallery {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-gallery img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        /* Contact Form */
+        .contact-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button[type="submit"] {
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="/index.html">Profile</a>
+            <a href="/portofolio.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="profile-img">
+            <img src="ganteng.jpeg" alt="Profile Photo">
+        </div>
+        <h2>Muhammad Adzin Fakhir R</h2>
+        <p>Halo saya M Adzin, Mahasiswa Mercu Buana Yogyakarta yang sedang mempelajari tentang web development.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="Projects">
+        <h3>Projects</h3>
+        <ul>
+            <li>Membuat database sederhana</li>
+            <li>Membuat form pengisian data menggunakan neatbeans</li>
+            <li>Menghitung probabilitas kelusuan mahasiswa </li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Gallery (Horizontal) -->
+    <section class="portfolio">
+        <div class="portfolio-gallery">
+            <img src="karyawan.png" alt="UI Kit Landing Page">
+            <img src="bagan.png" alt="desc">
+            <img src="flowchart.png" alt="desc">
+            <img src="pbo.png" alt="desc">
+            <img src="probabilitas.png" alt="Dashboard Project">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h3>Contact</h3>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
